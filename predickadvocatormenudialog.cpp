@@ -29,7 +29,7 @@ ribi::About ribi::PreDickAdvocaTorMenuDialog::GetAbout() const noexcept
     "Richel Bilderbeek",
     "PreDickAdvocaTor",
     "tool to correctly predict WC scores", //if the lucky number is correct and the truth becomes reality
-    "the 3rd of December 2013",
+    "the November 20th of 2015",
     "20010-2015",
     "http://www.richelbilderbeek.nl/ToolPreDickAdvocaTor.htm",
     GetVersion(),
@@ -54,26 +54,18 @@ ribi::Help ribi::PreDickAdvocaTorMenuDialog::GetHelp() const noexcept
   );
 }
 
-boost::shared_ptr<const ribi::Program> ribi::PreDickAdvocaTorMenuDialog::GetProgram() const noexcept
-{
-  boost::shared_ptr<const ribi::Program> p {
-    new ribi::ProgramPreDickAdvocaTor
-  };
-  assert(p);
-  return p;
-}
-
 std::string ribi::PreDickAdvocaTorMenuDialog::GetVersion() const noexcept
 {
-  return "2.1";
+  return "3.0";
 }
 
 std::vector<std::string> ribi::PreDickAdvocaTorMenuDialog::GetVersionHistory() const noexcept
 {
   return {
     "2010-xx-xx: version 1.0: initial version",
-    "2013-12-03: version 2.0: improved user experience, prepare for next WC"
-    "2013-12-27: version 2.1: put 2014 WC teams in"
+    "2013-12-03: version 2.0: improved user experience, prepare for next WC",
+    "2013-12-27: version 2.1: put 2014 WC teams in",
+    "2015-11-20: version 3.0: moved to own GitHub"
   };
 }
 
