@@ -3,7 +3,6 @@
 #include <cassert>
 #include <iostream>
 
-#include "richelbilderbeekprogram.h"
 #include "trace.h"
 #include "testtimer.h"
 
