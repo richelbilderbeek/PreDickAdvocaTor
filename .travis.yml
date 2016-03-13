@@ -24,17 +24,7 @@ addons:
 #  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8"; fi
 
 script: 
- #- git clone https://github.com/richelbilderbeek/PreDickAdvocaTor
- - cd ..
- - pwd
- - git clone https://github.com/richelbilderbeek/RibiLibraries
- - cd PreDickAdvocaTor
- - ls
- - pwd
- - qmake PreDickAdvocaTorConsole.pro
- - make
- - qmake PreDickAdvocaTorConsole.pro
- - make
+ - ./build.sh
 
 after_success:
   - codecov
