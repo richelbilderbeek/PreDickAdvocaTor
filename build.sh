@@ -9,5 +9,5 @@ ls
 pwd
 qmake PreDickAdvocaTorConsole.pro
 make
-qmake PreDickAdvocaTorConsole.pro
+qmake PreDickAdvocaTorDesktop.pro
 make
