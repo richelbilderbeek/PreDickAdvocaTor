@@ -14,6 +14,9 @@ before_install:
   - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8"; fi
 
 script: 
+ - git clone https://github.com/richelbilderbeek/PreDickAdvocaTor
+ - git clone https://github.com/richelbilderbeek/RibiLibraries
+ - cd PreDickAdvocaTor
  - qmake PreDickAdvocaTorConsole.pro
  - make
  - qmake PreDickAdvocaTorConsole.pro

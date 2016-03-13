@@ -1,13 +1,13 @@
-include(../PreDickAdvocaTor/PreDickAdvocaTorConsole.pri)
+include($$PWD/PreDickAdvocaTorConsole.pri)
 
 SOURCES += \
-    ../PreDickAdvocaTor/qtpredickadvocatormaindialog.cpp \
-    ../PreDickAdvocaTor/qtpredickadvocatormenudialog.cpp
+    $$PWD/qtpredickadvocatormaindialog.cpp \
+    $$PWD/qtpredickadvocatormenudialog.cpp
 
 HEADERS += \
-    ../PreDickAdvocaTor/qtpredickadvocatormaindialog.h \
-    ../PreDickAdvocaTor/qtpredickadvocatormenudialog.h
+    $$PWD/qtpredickadvocatormaindialog.h \
+    $$PWD/qtpredickadvocatormenudialog.h
 
 FORMS += \
-    ../PreDickAdvocaTor/qtpredickadvocatormenudialog.ui \
-    ../PreDickAdvocaTor/qtpredickadvocatormaindialog.ui
+    $$PWD/qtpredickadvocatormenudialog.ui \
+    $$PWD/qtpredickadvocatormaindialog.ui

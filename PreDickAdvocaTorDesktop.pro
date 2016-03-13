@@ -5,6 +5,6 @@ include(../RibiLibraries/GeneralConsole.pri)
 include(../RibiLibraries/GeneralDesktop.pri)
 
 #Specific, desktop
-include(../PreDickAdvocaTor/PreDickAdvocaTorDesktop.pri)
+include(PreDickAdvocaTorDesktop.pri)
 
 SOURCES += qtmain.cpp

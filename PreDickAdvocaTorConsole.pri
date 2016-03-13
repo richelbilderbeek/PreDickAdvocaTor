@@ -2,10 +2,10 @@ INCLUDEPATH += \
     ../PreDickAdvocaTor
 
 HEADERS += \
-    ../PreDickAdvocaTor/predickadvocatormenudialog.h \
-    ../PreDickAdvocaTor/predickadvocatormaindialog.h
+    $$PWD/predickadvocatormenudialog.h \
+    $$PWD/predickadvocatormaindialog.h
 
 SOURCES += \
-    ../PreDickAdvocaTor/predickadvocatormenudialog.cpp \
-    ../PreDickAdvocaTor/predickadvocatormaindialog.cpp
+    $$PWD/predickadvocatormenudialog.cpp \
+    $$PWD/predickadvocatormaindialog.cpp
 
