@@ -33,3 +33,6 @@ object_script*
 *plugin_import.cpp
 ui_*
 release/
+PreDickAdvocaTorConsole
+PreDickAdvocaTorDesktop
+moc_*
