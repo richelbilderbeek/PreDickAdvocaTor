@@ -26,8 +26,10 @@ addons:
 script: 
  - git clone https://github.com/richelbilderbeek/PreDickAdvocaTor
  - git clone https://github.com/richelbilderbeek/RibiLibraries
+ - pwd
  - ls
  - cd PreDickAdvocaTor
+ - pwd
  - ls
  - qmake PreDickAdvocaTorConsole.pro
  - make
