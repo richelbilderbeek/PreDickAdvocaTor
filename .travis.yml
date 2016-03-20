@@ -9,6 +9,9 @@ before_install:
   - sudo pip install codecov # From https://github.com/travis-ci/travis-ci/issues/1705
   - sudo apt-get update -qq
 
+install: 
+  - sudo apt-get install -qq g++-5
+
 addons:
   apt:
     sources:
