@@ -37,3 +37,6 @@ PreDickAdvocaTorConsole
 PreDickAdvocaTorDesktop
 moc_*
 *.gcno
+*.gcov
+*.gcda
+PreDickAdvocaTorConsoleTest
