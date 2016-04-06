@@ -3,7 +3,6 @@ include(../RibiLibraries/ConsoleApplicationNoWeffcpp.pri)
 
 include(../RibiLibraries/Boost.pri)
 include(../RibiLibraries/GeneralConsole.pri)
-include(../RibiLibraries/GeneralConsoleTest.pri)
 
 include(PreDickAdvocaTorConsole.pri)
 include(PreDickAdvocaTorConsoleTest.pri)
