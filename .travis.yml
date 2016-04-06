@@ -11,6 +11,7 @@ before_install:
 
 install: 
   - sudo apt-get install -qq g++-5
+  - sudo apt-get install -qq gcov-5
 
 addons:
   apt:
@@ -30,5 +31,6 @@ script:
   - ./PreDickAdvocaTorConsoleTest
   - ./get_code_cov.sh
   - codecov
+  - ./clean.sh
   - ./build_console.sh
   - ./build_desktop.sh
