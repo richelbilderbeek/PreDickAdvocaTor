@@ -8,3 +8,6 @@ include(../RibiLibraries/GeneralDesktop.pri)
 include(PreDickAdvocaTorDesktop.pri)
 
 SOURCES += qtmain.cpp
+
+# Thanks to Qt
+QMAKE_CXXFLAGS += -Wno-unused-variable

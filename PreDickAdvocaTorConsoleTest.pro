@@ -15,3 +15,6 @@ LIBS += -lboost_unit_test_framework
 # gcov
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
+
+# Thanks to Qt
+QMAKE_CXXFLAGS += -Wno-unused-variable
