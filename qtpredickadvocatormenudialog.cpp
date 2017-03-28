@@ -14,9 +14,6 @@ ribi::QtPreDickAdvocaTorMenuDialog::QtPreDickAdvocaTorMenuDialog(QWidget *parent
     QtHideAndShowDialog(parent),
     ui(new Ui::QtPreDickAdvocaTorMenuDialog)
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   ui->setupUi(this);
 }
 
@@ -48,17 +45,3 @@ void ribi::QtPreDickAdvocaTorMenuDialog::on_button_quit_clicked()
 {
   this->close();
 }
-
-#ifndef NDEBUG
-void ribi::QtPreDickAdvocaTorMenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  PreDickAdvocaTorMenuDialog();
-  QtPreDickAdvocaTorMainDialog(123);
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif

@@ -20,9 +20,6 @@ ribi::QtPreDickAdvocaTorMainDialog::QtPreDickAdvocaTorMainDialog(
     ui(new Ui::QtPreDickAdvocaTorMainDialog),
     m_dialog(seed)
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   ui->setupUi(this);
 
   const int sz = m_dialog.GetTeamNames().size();
@@ -82,16 +79,3 @@ void ribi::QtPreDickAdvocaTorMainDialog::on_box_right_currentIndexChanged(int)
 {
   OnAnyChange();
 }
-
-#ifndef NDEBUG
-void ribi::QtPreDickAdvocaTorMainDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  PreDickAdvocaTorMainDialog(0);
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif

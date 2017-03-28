@@ -14,7 +14,7 @@ namespace ribi {
 
 class QtPreDickAdvocaTorMenuDialog : public QtHideAndShowDialog
 {
-  Q_OBJECT
+  Q_OBJECT //!OCLINT
 
 public:
   explicit QtPreDickAdvocaTorMenuDialog(QWidget *parent = 0);
@@ -29,9 +29,6 @@ private slots:
 
 private:
   Ui::QtPreDickAdvocaTorMenuDialog *ui;
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace ribi
