@@ -3,23 +3,16 @@
 #include <cassert>
 #include <iostream>
 
-#include "trace.h"
-#include "testtimer.h"
-
-
 int ribi::PreDickAdvocaTorMenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   const int argc = static_cast<int>(argv.size());
   if (argc == 1)
   {
     std::cout << GetHelp() << '\n';
-    return 1;
+    return 0;
   }
   assert(!"TODO");
-  return 1;
+  return 0;
 }
 
 ribi::About ribi::PreDickAdvocaTorMenuDialog::GetAbout() const noexcept
@@ -34,8 +27,6 @@ ribi::About ribi::PreDickAdvocaTorMenuDialog::GetAbout() const noexcept
     GetVersion(),
     GetVersionHistory()
   );
-  a.AddLibrary("TestTimer version: " + TestTimer::GetVersion());
-  a.AddLibrary("Trace version: " + Trace::GetVersion());
   return a;
 }
 
@@ -67,15 +58,3 @@ std::vector<std::string> ribi::PreDickAdvocaTorMenuDialog::GetVersionHistory() c
     "2015-11-20: version 3.0: moved to own GitHub"
   };
 }
-
-#ifndef NDEBUG
-void ribi::PreDickAdvocaTorMenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif

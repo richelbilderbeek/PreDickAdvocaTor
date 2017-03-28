@@ -40,3 +40,4 @@ moc_*
 *.gcov
 *.gcda
 PreDickAdvocaTorConsoleTest
+*.pro.user.*

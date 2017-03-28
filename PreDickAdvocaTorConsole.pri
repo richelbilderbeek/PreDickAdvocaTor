@@ -1,5 +1,4 @@
-INCLUDEPATH += \
-    ../PreDickAdvocaTor
+INCLUDEPATH += $$PWD
 
 HEADERS += \
     $$PWD/predickadvocatormenudialog.h \

@@ -4,15 +4,10 @@
 #include <cassert>
 #include <cstdlib>
 
-#include "testtimer.h"
-#include "trace.h"
-
 ribi::PreDickAdvocaTorMainDialog::PreDickAdvocaTorMainDialog(const int seed)
   : m_team_scores(CreateTeamScores(seed))
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
+
 }
 
 std::vector<std::string> ribi::PreDickAdvocaTorMainDialog::GetTeamNames() noexcept
@@ -96,15 +91,3 @@ int ribi::PreDickAdvocaTorMainDialog::GetScore()
   }
   return max_score;
 }
-
-#ifndef NDEBUG
-void ribi::PreDickAdvocaTorMainDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif
