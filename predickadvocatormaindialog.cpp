@@ -13,37 +13,37 @@ ribi::PreDickAdvocaTorMainDialog::PreDickAdvocaTorMainDialog(const int seed)
 std::vector<std::string> ribi::PreDickAdvocaTorMainDialog::GetTeamNames() noexcept
 {
   const std::vector<std::string> v {
-    "Algeria",
     "Argentina",
     "Australia",
     "Belgium",
-    "Bosnia and Herzegovina",
     "Brazil",
-    "Cameroon",
-    "Chile",
     "Colombia",
-    "Costa Rica",
+    "CostaRica",
     "Croatia",
-    "Ecuador",
+    "Denmark",
+    "Egypt",
     "England",
     "France",
     "Germany",
-    "Ghana",
-    "Greece",
-    "Honduras",
+    "Iceland",
     "Iran",
-    "Italy",
-    "Ivory Coast",
     "Japan",
     "Mexico",
-    "Netherlands",
+    "Morocco",
     "Nigeria",
+    "Panama",
+    "Peru",
+    "Poland",
     "Portugal",
     "Russia",
-    "South Korea",
+    "SaudiArabia",
+    "Senegal",
+    "Serbia",
+    "SouthKorea",
     "Spain",
+    "Sweden",
     "Switzerland",
-    "United States",
+    "Tunisia",
     "Uruguay"
   };
   assert(v.size()==32);
@@ -63,8 +63,9 @@ const std::vector<std::vector<int> > ribi::PreDickAdvocaTorMainDialog::CreateTea
       team_names.begin(),
       std::find(team_names.begin(),team_names.end(),"Netherlands")
     );
-  assert(dutch_index < sz);
-  assert(GetTeamNames()[dutch_index] == "Netherlands");
+
+  //assert(dutch_index < sz);
+  //assert(GetTeamNames()[dutch_index] == "Netherlands");
   for (std::size_t y = 0; y!=sz; ++y)
   {
     for (std::size_t x = 0; x!=sz; ++x)
@@ -72,10 +73,10 @@ const std::vector<std::vector<int> > ribi::PreDickAdvocaTorMainDialog::CreateTea
       v[y][x] = GetScore();
     }
     //Add known score for The Netherlands
-    v[y][dutch_index] = 0;
+    //v[y][dutch_index] = 0;
   }
   //Add known scores for The Netherlands
-  v[dutch_index] = std::vector<int>(sz,10);
+  //v[dutch_index] = std::vector<int>(sz,10);
 
   return v;
 }
