@@ -41,3 +41,5 @@ moc_*
 *.gcda
 PreDickAdvocaTorConsoleTest
 *.pro.user.*
+
+site/
