@@ -43,3 +43,7 @@ PreDickAdvocaTorConsoleTest
 *.pro.user.*
 
 site/
+
+wordlist.dic
+
+coverage/
