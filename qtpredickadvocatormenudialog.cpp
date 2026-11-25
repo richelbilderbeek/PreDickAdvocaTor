@@ -5,7 +5,6 @@
 #include "qtaboutdialog.h"
 #include "predickadvocatormenudialog.h"
 #include "qtpredickadvocatormaindialog.h"
-#include "testtimer.h"
 #include "ui_qtpredickadvocatormenudialog.h"
 #include "trace.h"
 #pragma GCC diagnostic pop

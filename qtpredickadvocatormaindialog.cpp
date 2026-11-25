@@ -8,7 +8,6 @@
 #include <string>
 #include <vector>
 
-#include "testtimer.h"
 #include "trace.h"
 #include "ui_qtpredickadvocatormaindialog.h"
 #pragma GCC diagnostic pop
